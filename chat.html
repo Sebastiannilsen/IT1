@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyANXRqvzovt-F6GsXVF4ddZayPZA2_RaZM",
+        authDomain: "sebastian-eed27.firebaseapp.com",
+        databaseURL: "https://sebastian-eed27.firebaseio.com",
+        projectId: "sebastian-eed27",
+        storageBucket: "sebastian-eed27.appspot.com",
+        messagingSenderId: "73320767581",
+        appId: "1:73320767581:web:37b4ead76f796e1b256db4",
+        measurementId: "G-5KWJ16476S"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <link rel="stylesheet" href="chat.css">
+  </head>
+  <body>
+    <div id="divInpt">
+      <input type="text" id="inpNavn" placeholder="Brukernavn">
+      <input type="text" id="inpMeld" placeholder="Skriv meldingen her">
+      <button type="button" id="btnMeld" onclick="leggTilMeld()">Send!</button>
+      <button type="button" id="btnSlett" onclick="slettHistorikk()">Fjern meldingshistorikk</button>
+    </div>
+
+    <div id="meldinger"></div>
+
+    <script src="chat.js"></script>
+
+  </body>
+</html>
